@@ -1,4 +1,4 @@
-  <div class="content-header">
+<div class="content-header">
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
@@ -83,4 +83,4 @@
 <!-- /.content -->
 </div>
 
-<?php include "partials/scripts.php" ?>
+<?php include "partials/cssdatatables.php" ?>
