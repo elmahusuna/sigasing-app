@@ -49,11 +49,11 @@
             INNER JOIN jabatan J ON JK.jabatan_id = J.id
             WHERE JK.karyawan_id = K.id ORDER BY JK.tanggal_mulai DESC
             LIMIT 1 
-            ) jabatan_terkini ,
+            ) jabatan_terkini,
             (
             SELECT B.nama_bagian FROM bagian_karyawan BK
             INNER JOIN bagian B ON BK.bagian_id = B.id
-            WHERRE BK.karywan_id = K.id ORDER BY BK.tanggal_mulai DESC
+            WHERE BK.karyawan_id = K.id ORDER BY BK.tanggal_mulai DESC
             LIMIT 1
             ) bagian_terkini
             FROM karyawan K";
